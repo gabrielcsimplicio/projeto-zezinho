@@ -37,6 +37,9 @@ li, a, button {
     font-size: 30px;
     text-indent: 20px;
 }
+hr {
+    margin-top: 50px;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -205,6 +208,34 @@ button:hover {
     background-size: cover;
     background-position: center
 }
+#cardapio h2 {
+    margin-left: 70px;
+}
+
+#cardapio .texto {
+    text-indent: 0px;
+    text-align: center;
+}
+#cardapio img {
+    max-width: 300px;
+    text-align: center;
+}
+#qrcode {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+footer {
+    background-color: var(--VermelhoZ);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+footer a {
+    font-size: 30px;
+}
 @media (max-width: 900px) {
     .titulo {
         font-size: 70px;
@@ -225,32 +256,41 @@ button:hover {
     padding: 30px;
     margin-bottom: 10px;
     background-color: white;
-}
+    }   
     #fundo-sobre {
     height: 500px;
     width: 100%;
     border-radius: 0px;
+    }
+    #eventos h2 {
+    margin-left: 30px;
 }
-#noitevo {
+    #noitevo {
     flex-direction: column;
-}
-#imagem-noitevo {
+    }
+    #imagem-noitevo {
     min-width: 380px;
-    margin-top: 20px;
-}
-#feijoada{
+    margin-top: 25px;
+    }
+    #feijoada{
     flex-direction: column;
-}
-#imagem-feijoada {
+    }
+    #imagem-feijoada {
     min-width: 380px;
     margin-top: 20px;
     order: 100;
-}
-#junina {
+    }
+    #junina {
     flex-direction: column;
-}
-#imagem-junina {
+    }
+    #imagem-junina {
     min-width: 380px;
     margin-top: 20px;
+    }
+    #cardapio h2 {
+    margin-left: 30px;
 }
+    #cardapio a {
+        font-size: 30px;
+    }
 }
