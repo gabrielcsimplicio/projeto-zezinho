@@ -4,7 +4,7 @@
 :root {
   --VermelhoZ: #930000;
   --DouradoE: #BC8336;
-  --DouradoC: #FDE396;
+  --DouradoC: #e6ce87;
   --GradientePrincipal: linear-gradient(90deg, var(--DouradoE),var(--DouradoC), var(--DouradoE));
 }
 * {
@@ -19,7 +19,15 @@ li, a, button {
     text-decoration: none;
     color: var(--VermelhoZ);
 }
-
+.forte {
+    color: var(--VermelhoZ);
+}
+.dourado {
+    background: var(--GradientePrincipal);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -77,7 +85,34 @@ button:hover {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+}
+#sobre {
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 50px auto;
+}
+#texto-sobre {
+    width: 50%;
+    padding: 70px;
+    background-color: white;
+}
+#texto-sobre h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#texto-sobre p {
+    text-align: justify;
+    font-size: 20px;
+    text-indent: 20px;
+}
+#fundo-sobre {
+    background-image: url(imagens/fundo-sobre.jpg);
+    height: 700px;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 0px 0px 10px;
 }
 
 @media (max-width: 900px) {
@@ -87,5 +122,19 @@ button:hover {
     .nav-links {
         display: none;
     }
-    
+    #sobre {
+    flex-direction: column;
+    margin: 0px;
+}
+    #texto-sobre {
+    align-self: center;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+#fundo-sobre {
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
 }
