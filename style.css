@@ -235,14 +235,14 @@ button:hover {
     flex-direction: column;
 }
 #imagem-noitevo {
-    width: 450px;
+    min-width: 380px;
     margin-top: 20px;
 }
 #feijoada{
     flex-direction: column;
 }
 #imagem-feijoada {
-    width: 450px;
+    min-width: 380px;
     margin-top: 20px;
     order: 100;
 }
@@ -250,7 +250,7 @@ button:hover {
     flex-direction: column;
 }
 #imagem-junina {
-    width: 450px;
+    min-width: 380px;
     margin-top: 20px;
 }
 }
