@@ -91,7 +91,7 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    margin: 50px auto;
+    margin: 30px auto;
 }
 #texto-sobre {
     width: 50%;
