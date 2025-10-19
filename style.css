@@ -4,7 +4,7 @@
 :root {
   --VermelhoZ: #930000;
   --DouradoE: #BC8336;
-  --DouradoC: #e6ce87;
+  --DouradoC: #ccb777;
   --GradientePrincipal: linear-gradient(90deg, var(--DouradoE),var(--DouradoC), var(--DouradoE));
 }
 * {
@@ -27,6 +27,15 @@ li, a, button {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.titulo {
+    font-size: 70px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.texto {
+    font-size: 30px;
+    text-indent: 20px;
 }
 header {
     display: flex;
@@ -77,6 +86,12 @@ button {
 button:hover {
     background-image: var(--GradientePrincipal);
 }
+#sobre {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 30px auto;
+}
 #fundo1 {
     background-image: url(imagens/fundo-zezinho1.jpg);
     background-color: black;
@@ -86,38 +101,114 @@ button:hover {
     background-size: cover;
     background-position: center;
 }
-#sobre {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    margin: 30px auto;
-}
 #texto-sobre {
     width: 50%;
     background-color: white;
     padding-left: 70px;
     padding-right: 70px;
 }
-#texto-sobre h1 {
-    font-size: 70px;
-    margin-bottom: 30px;
-}
 #texto-sobre p {
     text-align: justify;
-    font-size: 20px;
-    text-indent: 20px;
 }
 #fundo-sobre {
     background-image: url(imagens/fundo-sobre.jpg);
-    height: 700px;
+    height: 750px;
     width: 50%;
     background-size: cover;
     background-position: center;
     border-radius: 10px 0px 0px 10px;
 }
-
+#eventos {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+}
+#eventos h2 {
+    margin-left: 70px;
+}
+.titulo-evento {
+    font-size: 50px;
+    margin-left: 15px;
+    text-align: center;
+}
+.dsc-evento {
+    font-size: 30px;;
+    margin: 25px 20px 10px 15px;
+    text-align: justify;
+}
+.data {
+    font-size: 35px;
+    text-align: center;
+}
+#noitevo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: lightgray;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+    padding: 15px;
+    border-radius: 10px;
+    margin: auto;
+    max-width: 1500px;
+    margin-bottom: 50px;
+}
+#imagem-noitevo {
+    background-image: url(imagens/noitevo.jpg);
+    min-width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+#feijoada {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: lightgray;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+    padding: 15px;
+    border-radius: 10px;
+    margin: auto;
+    max-width: 1500px;
+    margin-bottom: 50px;
+}
+#feijoada h3 {
+    margin-right: 15px;
+}
+#imagem-feijoada {
+    background-image: url(imagens/feijoada.jpg);
+    min-width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+#junina {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: lightgray;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+    padding: 15px;
+    border-radius: 10px;
+    margin: auto;
+    max-width: 1500px;
+}
+#imagem-junina {
+    background-image: url(imagens/junina.jpg);
+    min-width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center
+}
 @media (max-width: 900px) {
+    .titulo {
+        font-size: 70px;
+    }
     li, a, button {
         font-size: 20px;
     }
@@ -127,9 +218,6 @@ button:hover {
     #sobre {
     flex-direction: column;
     margin: 0px;
-}
-    #texto-sobre h1 {
-    font-size: 50px;
     }
     #texto-sobre {
     align-self: center;
@@ -138,9 +226,30 @@ button:hover {
     margin-bottom: 10px;
     background-color: white;
 }
-#fundo-sobre {
+    #fundo-sobre {
     height: 500px;
     width: 100%;
     border-radius: 0px;
+}
+#noitevo {
+    flex-direction: column;
+}
+#imagem-noitevo {
+    width: 450px;
+    margin-top: 20px;
+}
+#feijoada{
+    flex-direction: column;
+}
+#imagem-feijoada {
+    width: 450px;
+    margin-bottom: 20px;
+}
+#junina {
+    flex-direction: column;
+}
+#imagem-junina {
+    width: 450px;
+    margin-top: 20px;
 }
 }
