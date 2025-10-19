@@ -243,7 +243,8 @@ button:hover {
 }
 #imagem-feijoada {
     width: 450px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    order: 100;
 }
 #junina {
     flex-direction: column;
