@@ -236,6 +236,9 @@ footer {
 footer a {
     font-size: 30px;
 }
+footer a:hover {
+    color: var(--DouradoE);
+}
 @media (max-width: 900px) {
     .titulo {
         font-size: 70px;
@@ -269,14 +272,14 @@ footer a {
     flex-direction: column;
     }
     #imagem-noitevo {
-    min-width: 380px;
+    min-width: 350px;
     margin-top: 25px;
     }
     #feijoada{
     flex-direction: column;
     }
     #imagem-feijoada {
-    min-width: 380px;
+    min-width: 350px;
     margin-top: 20px;
     order: 100;
     }
@@ -284,7 +287,7 @@ footer a {
     flex-direction: column;
     }
     #imagem-junina {
-    min-width: 380px;
+    min-width: 350px;
     margin-top: 20px;
     }
     #cardapio h2 {
