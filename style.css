@@ -13,7 +13,15 @@
     box-sizing: border-box;
     font-family: 'Barlow Semi Condensed', Arial, Helvetica, sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
+header {
+    position: sticky;
+    top: 0;
+    background-color: #fff; 
+    z-index: 1000;
+}
 li, a, button {
     font-size: 28px;
     text-decoration: none;
